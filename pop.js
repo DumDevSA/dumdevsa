@@ -223,9 +223,11 @@ summaryD.addEventListener("click" , () => summaryIndicator(indFour,statusD));
 
 
 //BEGINNING OF THE NAVIGATION FUNCTION
-let items = [homeSection, bioSection, blogSection, contactsSection, formsSection, clonesSection, projectsSection, associatesSection];
+let items = [homeSection, bioSection, blogSection, contactsSection, formsSection, clonesSection, projectsSection, associatesSection
+];
 
-let indicators = [homeOpen, aboutOpen, blogOpen, contactsOpen, formsOpen, clonesOpen, projectsOpen, associatesOpen];
+let indicators = [homeOpen, aboutOpen, blogOpen, contactsOpen, formsOpen, clonesOpen, projectsOpen, associatesOpen
+];
 
 decider(homeSection, homeOpen);
 
@@ -362,7 +364,7 @@ regDated.textContent = today;
 
 newDate.textContent = new Date("5 mar 2022").toDateString();
 
-let versionOneDate = new Date("2022 mar 17");
+let versionOneDate = new Date("2022 may 5");
 
 experience.textContent = date.getFullYear() - 2020;
 
@@ -395,9 +397,9 @@ sassDate.textContent = sassDating.toDateString();
 },0);
 //ALL TIME & DATE FORMATS END
 
-version.textContent = "v1.601042022";
+version.textContent = "v1.905052022";
 
-console.warn(`This version of the portfolio is: ${version.textContent}`);
+console.info(`This version of the portfolio is: ${version.textContent}`);
 
 
 openFormB.addEventListener("click", () => {
@@ -770,7 +772,7 @@ threed.textContent = rangeThree.value;
   
   color();
   
-},2)
+},0)
 
 function color(){
 outputColor.style.backgroundColor=`rgb(${rangeOne.value},${rangeTwo.value},${rangeThree.value})`;
@@ -899,7 +901,7 @@ copy.addEventListener("click" ,() =>{
   
     title.textContent = "Copied Successfully!";
   
-    content.textContent = `You copied: rgb ${colorValue.textContent}`;
+    content.textContent = `You copied:  ${colorValue.textContent}`;
   
   }, 4);
   
@@ -931,356 +933,49 @@ none(universal);
 
 let quoteTitle = document.querySelector(".quote-title");
 
+let quoteCounter = document.querySelector(".quote-counter");
+
 let quoteContent = document.querySelector(".quote-content");
 
-let quoteImg= document.querySelector(".quote-image");
 
 let quoteBtn = document.querySelector(".quote-btn");
 
-let quotes = [
-`Believe in yourself, you can do it.`,
+quoteBtn.addEventListener("click" , loadQuote);
 
-`Nothing is impossible when you put your mind to it.`,
-
-`Fools despise correction, but the wise appreciates it.`,
-
-`Don't waste your time trying to please people, you're better than that.`,
-
-`Pain demands to be felt`,
-
-`Don't blame people for disappointing you, blame yourself for expecting so much.`,
-
-`One day you'll be a memory to some people, do your best to be a good one.`,
-
-`Don't lower your standards for anyone or anything. Self respect is important.`,
-
-`You can easily judge a character of a man by how he treats those who can do nothing for him.`,
-
-`Believe in yourself, even when no one else will.`,
-
-`I think it's impossible for ordinary people to choose to be extraordinary`,
-
-`Anger is an acid that can do more harm to the vessel in which it is stored than to anything in which it is poured.`,
-
-`Strong people don't put others down. They lift them up.`,
-
-`I'd rather be in deep dark grave and know that my poor soul was saved than to live in this world in a house of gold and deny my God and doom my soul.`,
-
-`Life is not easy for any of us. But what of that? We must have perseverance and above all confidence in ourselves. We must believe that we are gifted for something and that this thing must be attained.`,
-
-`Tomorrow becomes never. No matter how small the task, take the first step now.`,
-
-`Being happy doesn't mean that everything is perfect. It means you've decided to look beyond the imperfections.`,
-
-`What we fear the most is usually what we most need to do.`,
-
-`One bad chapter doesn't mean that your story is over.`,
-
-`He who learns but doesn't think, is lost! He who thinks but doesn't learn is in great danger.`,
-
-`To know the truth is good. To love it is better. To delight in it is best.`,
-
-`Don't teach your children how to read. Teach them to question what they read. Teach them to question everything.`,
-
-`Perhaps a man's character is like a tree and his reputation like its shadow. The shadow is what we think of it; The tree is real.`,
-
-`Just cause you got monkey off your back doesn't mean the circus has left town`,
-
-`Nobody is going to pour truth into your brain. It's something you have to find out yourself.`,
-
-`A slave is one who waits for someone to come and set him free.`,
-
-`The most common way people give up power, is by thinking they don't have any.`,
-
-`Be strong enough to let go anyone who doesn't respect your feelings.`,
-
-`Never be controlled by these three things: Your past, money and people.`,
-
-`Don't put the key to your happiness in some else's pocket.`,
-
-`Be yourself, people don't have to love you and you don't have to care.`,
-
-`It's easier to forgive an enemy than friend.`,
-
-`Optimism is a strategy for making a better future. Because unless you believe that the future can be better, it's unlikely you will step up and take responsibility for making it so. If you assume that there's no hope, you guarantee that there will be no hope. If you assume that there's an instinct to freedom, there are opportunities to change things, there's a change you can contribute to making a better world. The choice is yours.`,
-
-`You use a mirror to see your face; use works of art to see your soul.`,
-
-`Those who expect to reap the blessings of freedom, must like men, undergo the fatigue of supporting it.`,
-
-`No person has the right to rain on your dreams.`,
-
-`To be alone is the fate of all greatest minds.`,
-
-`A high degree of intellect tends to make a man unsocial.`,
-
-`History never repeats itself, man does.`,
-
-`A fool thinks himself to be wise, but a wise man knows himself to be a fool.`,
-
-`Beware of false knowledge, it's more perilous than ignorance.`,
-
-`Age is an issue of mind over matter. If you don't mind, it doesn't matter.`,
-
-`If we lose love and self respect for each other, this is how we finally die.`,
-
-`A mind once stretched by an idea, never returns to its original dimensions.`,
-
-`You can cut all the flowers but you cannot keep spring from coming.`,
-
-`Look closely. The beauty may be small.`,
-
-`The key to immortality is first living a life worth remembering.`,
-
-`You're never too old to set another goal or to dream a new one.`,
-
-`The man who moves a mountain begins by carrying away small stones.`,
-
-`Nobody made a greater mistake than he who did nothing because he could do only a little.`,
-
-`If you plan on being anything less than you are capable of being, you'll probably be unhappy all the days of your life.`,
-
-`You aren't paid according to how hard you work. You're paid according to how hard you are to replace.`,
-
-`If all you can do is crawl, start crawling.`,
-
-`Someday is a disease that will take your dreams to the grave with you.`,
-
-`Rudeness is the weak person's imitation of strength.`,
-
-`Don't impose on others what you yourself do not desire.`,
-
-`Rather fail with honor than succeed by fraud.`,
-
-`Waste no time arguing about what a good man should be. Be one.`,
-
-`People who have a religion should be glad, for not everyone has the gift in believing in heavenly things.`,
-
-`True friends stab you in the front.`,
-
-`Beware of little expenses; a small leak will sink a great ship.`,
-
-`Don't limit a child to your own learning, for she was born in another time.`,
-
-`Beauty is simply reality seen with eyes of love.`,
-
-`If you love somebody, let them go, for if they return, there were always yours. If they don't, they never were.`,
-
-`Don't waste your time with explanations: people only hear what they want to hear.`,
-
-`Indolence may seem attractive, but toil gives gratification.`,
-
-`If you loved someone, you loved him, and when you have nothing else to give, you still gave him love.`,
-
-`Where wisdom reigns, there's no conflict between thinking and feeling.`,
-
-`Life isn't worth living, unless it is lived for someone else.`,
-
-`It often safer to be in chains than free.`,
-
-`Beauty is worse than wine. It intoxicates both the holder and beholder.`,
-
-`I was quit, but I was not blind.`,
-
-`The real man smiles in trouble, gathers strength from distress and grows brave by reflection.`,
-
-`Life is easy, but we insist on making it difficult.`,
-
-`In youth and beauty, wisdom is but rare.`,
-
-`The measure of a man is what he does with power.`,
-
-`Man conquers the world by conquering himself.`,
-
-`The man who asks a question is a fool for a minute, the one who doesn't ask is a fool for life.`,
-
-`Whatever begins in anger, ends in shame.`,
-
-`When you find no solution to a problem. It's probably not a problem to be solved. But rather a truth to be accepted.`,
-
-`If you cannot do great things, do small things in a great way.`,
-
-`Don't count days, make the days count.`,
-
-`Your talent determines what you can do.  Your motivation determines how much you're willing to do. Your attitude determines how well you do it.`,
-
-`Happiness depends more upon the internal frame of a person's own mind not on the externals in the world.`,
-
-`Some people's idea of free speech is that they are free to say what they like, but if anyone says anything back, that is an outrage.`,
-
-`Behavior is a mirror in which anyone shows their his image.`,
-
-`It had long come to my attention that people of accomplishment rarely sat back and let things happen to them. They went out and happened to the things.`,
-
-`The difference between a genius and stupidity is,genius has its limits.`,
-
-`Our culture teaches us that making significant changes takes a long time and is difficult to do. This is simply NOT true. Change happens in an instant. It's not a process- it's something you do in an instant by making a decision.`,
-
-`If the path before you is clear, you're probably on someone else's.`,
-
-`It's in a character of very few men to honor without envy a friend who has prospered.`,
-
-`Action expresses priorities.`,
-
-`Impeferction sees impeferction. We tend to forget our own imperfections but remember those which abide in others.`,
-
-`You define your own life. Don't let other people write your script.`,
-
-`Your present circumstances don't determine where you can go. They merely determine where you can start.`,
-
-`To be nobody but yourself in the world that is doing its best day and night to make you like everybody else means to fight the hardest battle which any human being can fight and never stop fighting.`,
-
-`Laughing faces do not mean that there is absence of sorrow! But it means that they have the ability to deal with it.`,
-
-`I am grateful to all of those who said NO to me. It's because of them I did it myself.`,
-
-`If friendship is your weakest point then you are the strongest person in the world.`,
-
-`Opportunities are like sunrise, if you wait too long you might miss them.`,
-
-`When you love someone more than they deserve, surely they'll hurt you more than you deserve.`,
-
-`Gratitude is not only the greatest of virtues, but the parent of all the others.`,
-
-`It never ceases to amaze me; we love ourselves more than other people, but care more about their opinions than our own.`,
-
-`If you're always trying to be normal, you can never know how amazing you can be.`,
-
-`To be happy, we must not be too concerned with others.`,
-
-`To be without some of the things you want is an indispensable part of happiness.`,
-
-`Two percent of people think; three percent of people think they think; and ninety five percent of people rather die than think.`,
-
-`Yet we must say something when those who say most are saying nothing.`
-
-];
-
-let owners = ['unknown',
-'unknown',
-'king solomon',
-'unknown',
-'unknown',
-'Just smile',
-'unknown',
-'Tj Quote',
-'Johann Van Goethe',
-'Sasquatch',
-'Elon Musk',
-'Mark Twain',
-'Darth Vader',
-'Hank Williams',
-'Marie Curie',
-'Tim Ferriss',
-'Unknown',
-'Tim Ferriss',
-'Quote Portray',
-'Confucius',
-'Confucius',
-'George Carlin',
-'Abraham Lincoln',
-'George Carlin',
-'Noam Chomsky',
-'Ezra Pound',
-'Alice Walker',
-'Age of Attitude',
-'The inner life',
-'Growth Lodge',
-'The inner life',
-'William Blake',
-'Noam Chomsky',
-'George Bernard Shaw',
-'Thomas Paine',
-'Martin Luther',
-'Arthur Schopenhauer',
-'Arthur Schopenhauer',
-'Voltaire',
-'William Shakespeare',
-'George Bernard Shaw',
-'Mark Twain',
-'Maya Angelou',
-'Ralph Waldo Emerson',
-'Pablo Neruda',
-'Immanuel Kant',
-'Bruce Lee',
-'C.S. Lewis',
-'Confucius',
-'Edmund Burke',
-'Abraham Maslow',
-'Confucius',
-'Rumi',
-'Tim Ferriss',
-'Eric Hoffer',
-'Confucius',
-'Sophocles',
-'Marcus Aurelius',
-'Anne Frank',
-'Oscar Wilde',
-'Benjamin Franklin',
-'Rabindranath Tagore',
-'Rabindranath Tagore',
-'Kahlil Gibran',
-'Paulo Coelho',
-'Anne Frank',
-'George Orwell',
-'Carl Jung',
-'Albert Einstein',
-'Franz Kafka',
-'Aldous Huxley',
-'Jane Austen',
-'Thomas Paine',
-'Confucius',
-'Homer',
-'Plato',
-'Zeno of Citium',
-'Confucius',
-'Benjamin Franklin',
-'The Eternal Truth',
-'Napoleon Hill',
-'Mohammad Ali',
-'Lou Holtz',
-'George Washington',
-'Sir Winston Churchill',
-'Johann Wolfgang von Goethe',
-'Leonardo da Vinci',
-'Alexandre Dumas Jr',
-'Tony Robbins',
-'Carl Jung',
-'Aeschylus',
-'Mohatma Ghandhi',
-'Dumisa',
-'Oprah Winfrey',
-'Nido Qubein',
-'E.E. Cummings',
-'Shakespeare',
-'Albert Einstein',
-'Abraham Lincoln',
-'William Arthur',
-'Growth Lodge',
-'Cicero',
-'Marcus Aurelius',
-'Maya Angelou',
-'Albert Camus',
-'Bertrand Russell',
-'George Bernard Shaw',
-'Augustine of Hippo'
-];
-
-/*quoteBtn.addEventListener("click" , () =>{
+function loadQuote(){
   
-setTimeout( () =>{
+let xhr = new XMLHttpRequest();
 
+xhr.open("GET", "quotes.json",true);
+
+xhr.onload = function (){
+  
+if(this.status == 200){
+ 
+let dataquotes = JSON.parse(this.responseText);
+ 
+setTimeout(() => {
+ 
 let round = Math.random();
+ 
+let random = Math.round(round * (dataquotes.length - 1));
 
-let random = Math.round(round * (quotes.length-1));
+quoteCounter.textContent = `${(random+1)} of ${(dataquotes.length)}`;
 
-quoteTitle.textContent =` ${(random+1)} of ${(owners.length)}  ${owners[random]}`;
-  
-quoteContent.textContent =`   ${quotes[random]}  `;
+quoteTitle.textContent = `   ${dataquotes[random].name}`;
+ 
+quoteContent.textContent = `   ${dataquotes[random].quote}  `;
 
-},0)
-  
-  });*/
+//quoteImg.classList.add("size");
+
+//quoteImg.setAttribute("src", `   ${dataquotes[random].image}`);
+ 
+   },0)}
+   
+   }
+ xhr.send();
+}
+
 
 //Random Quote Generator End
 
@@ -1327,7 +1022,6 @@ break
 
 }
 });
-
 
 // stop watch
 
@@ -1455,38 +1149,25 @@ listDelete.addEventListener("click", () => listDelete.classList.toggle("toggled-
 
 listAdd.addEventListener("click", () => listAdd.classList.toggle("toggled-quote"));
 
-
 let listArray = [];
-
 
 listAdd.addEventListener("click" , ()=>{
   
 setTimeout(()=>{
 listArray.push(listValue.value.toUpperCase());
 
-newLi = document.createElement("li");
+let newLi = document.createElement("li");
 
 newLi.textContent = listValue.value;
 
 listItem.appendChild(newLi);
 
+newLi.ins
+
 listValue.value=""
 },0);
 
 })
-
-let listIndex;
-
-let listChildren = listItem.children;
-
-/*setInterval(()=>{
-  
-   listIndex = listArray.indexOf(listValue.value.toUpperCase());
-   
-   listChild = listChildren[listIndex];
-   
-   alert(listChild);
-},5000)*/
 
 listDelete.addEventListener("click" , ()=>{
   
@@ -1497,53 +1178,62 @@ if(isNaN(parseInt(listValue.value))){
 title.textContent ="Wrong input entered:";
 
 content.textContent="To successfuly delete an item, you must type its number then press delete. Only a number is accepted.";
-universalOn(3000);
+universalOn(4000);
 
 
+}else if(listValue.value > (listItem.children.length+1)|| listItem.children.length == 0){
+  
 }else{
   
-  
-listItem.removeChild(listItem.item(parseInt(listValue.value-1)));
+title.textContent ="successfuly Deleted the following:";
 
-alert(parseInt(listValue.value-1));
+content.textContent = `${listItem.children[(parseInt(listValue.value)-1)].textContent}`;
+
+universalOn(4000);
+  
+listItem.removeChild(listItem.children[(parseInt(listValue.value)-1)]);
+
+listValue.value="";
 
 }
 },0);
 });
 
-quoteBtn.addEventListener("click" , loadQuote);
+let greeting = document.querySelector("#greeting");
 
-function loadQuote(){
+let dumLogo = document.querySelector(".letter");
+
+let greeted = document.querySelector(".greeted");
+
+let greetLanguagr = document.querySelector("#greet-language");
+
+function loadGreeting(){
   
 let xhr = new XMLHttpRequest();
 
-xhr.open("GET", "quotes.json",true);
+xhr.open("GET", "greetings.json",true);
 
 xhr.onload = function (){
+
+setInterval(() => {
   
 if(this.status == 200){
  
-let dataquotes = JSON.parse(this.responseText);
- 
-setTimeout(() => {
+let greetings = JSON.parse(this.responseText);
  
 let round = Math.random();
  
-let random = Math.round(round * (dataquotes.length - 1));
+let random = Math.round(round * (greetings.length - 1));
 
-quoteTitle.textContent = ` ${(random+1)} of ${(dataquotes.length)}  ${dataquotes[random].name}`;
+greeting.textContent = `${greetings[random].greeting}`;
  
-quoteContent.textContent = `   ${dataquotes[random].quote}  `;
+greetLanguagr.textContent = `   ${greetings[random].language}    `;
 
-quoteImg.classList.remove("none");
-
-quoteImg.setAttribute("src", `   ${dataquotes[random].image}`);
- 
-   },0)}
-   
    }
+   },3500)}
+   
  xhr.send();
 }
-  
-  
+
+loadGreeting();
 

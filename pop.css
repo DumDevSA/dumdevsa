@@ -203,7 +203,7 @@ a:hover,a:visited,a:active {
 
 .h-nav {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--black);
+    color: var(--orchid);
     font-size: var(--smallest);
     font-weight: bolder;
     letter-spacing: 1px;
@@ -213,6 +213,7 @@ a:hover,a:visited,a:active {
 .lobster{
 font-family: 'Lobster Two', sans-serif;
 color: var(--blue);
+letter-spacing: 1px;
 }
 
 .roboto-condensed-blue{
@@ -254,9 +255,9 @@ p {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Tahoma;
     letter-spacing: 3px;
-    color: var(--orchid);
+    color: var(--blue);
 }
 
 .nav-dumisa,.terming,.sakhile-dumisa {
@@ -311,6 +312,10 @@ p {
     color: var(--gray);
     letter-spacing: 1.4px;
     background: var(--theme);
+}
+
+#search::placeholder{
+  color: var(--blue);
 }
 
 .search-img {
@@ -491,10 +496,6 @@ p {
     width: 50px;
 }
 
-.logo .letter{
-  color: var(--orchid);
-}
-
 .svg-1 .letter {
     color: var(--orchid);
     text-shadow: 1px 1px 1px var(--dark);
@@ -671,11 +672,12 @@ summary{
     margin-bottom: 7vh;
     box-shadow: var(--shadow);
     border-radius: 4px;
+    border: var(--border);
 }
 
 #home .template{
   background: var(--theme);
-  border-radius: none;
+  border: var(--border);
   border-radius: 4px;
 }
 
@@ -944,6 +946,10 @@ summary{
     margin-left: 40px;
 }
 
+#greet-language{
+  font-size: var(--smallest);
+}
+
 .good-name,.good-email,.good-no,.good-pwd,.good-confirm {
     position: relative;
     left: 85%;
@@ -1047,10 +1053,6 @@ summary{
     background: var(--white)
 }
 
-.noshadow{
-    box-shadow: none;
-}
-
 .round-3{
     width: 50px;
     height: 50px;
@@ -1111,7 +1113,8 @@ summary{
 
 #start,#pause,#clear,#decreament{
   background: var(--smoke);
-  border: var(--border);
+  border: .1px solid var(--blue);
+  border-radius: 4px;
   box-shadow: var(--shadow);
   width: 20vw;
   height: 50px;
@@ -1123,7 +1126,7 @@ summary{
 #list-value{
   width: 60vw;
   height: 45px;
-  border: .1px solid var(--gray);
+  border: .1px solid var(--blue);
   text-transform: capitalize;
   border-radius: 4px;
   background: var(--smoke);
@@ -1135,7 +1138,7 @@ summary{
 #delete-item,#add-item{
   width: 15vw;
   height: 45px;
-  border: .1px solid var(--gray);
+  border: .1px solid var(--blue);
   text-transform: capitalize;
   border-radius: 4px;
   background: var(--smoke);
@@ -1290,5 +1293,14 @@ margin-left: 30px;
 .bg-smoke{
   background: var(--smoke);
 }
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.smallest{
+  font-size: var(--smallest);
+}
+
 
 

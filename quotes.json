@@ -5,6 +5,12 @@
     "image":"question_mark_black_24dp.svg"
 },
 {
+"name": "Harper Lee",
+"quote": "Try fighting with your head for a change. It's a good one, even if it does resist learning.", 
+  "image": "/leaf-yellow-autumn-svgrepo-com.svg"
+
+},
+{
   "name": "Unknown",
   "quote":  "Nothing is impossible when you put your mind to it.",
   "image": "question_mark_black_24dp.svg"
@@ -183,17 +189,17 @@
 {
   "name": "Arthur Schopenhauer",
   "quote": "To be alone is the fate of all greatest minds.",
-  "image": "Arthur Schopenhauer.png"
+  "image": "leaf-yellow-autumn-svgrepo-com.svg"
 },
 {
   "name": "Arthur Schopenhauer",
   "quote":  "A high degree of intellect tends to make a man unsocial.",
-  "image": "Arthur Schopenhauer.png"
+  "image": "leaf-yellow-autumn-svgrepo-com.svg"
 },
 {
   "name": "Voltaire",
   "quote": "History never repeats itself, man does.",
-  "image": "voltaire.png"
+  "image": "leaf-yellow-autumn-svgrepo-com.svg"
 },
 {
   "name": "William Shakespeare",
