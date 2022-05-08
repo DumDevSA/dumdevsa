@@ -1237,3 +1237,133 @@ greetLanguagr.textContent = `   ${greetings[random].language}    `;
 
 loadGreeting();
 
+
+// hexideximal generator
+let hexOne = document.querySelector("#hex-1");
+
+let hexTwo = document.querySelector("#hex-2");
+
+let hexThree = document.querySelector("#hex-3");
+
+let hexFour = document.querySelector("#hex-4");
+
+let hexFive = document.querySelector("#hex-5");
+
+let hexSix = document.querySelector("#hex-6");
+
+
+let oneh = document.querySelector(".oneh");
+
+let twoh = document.querySelector(".twoh");
+
+let threeh = document.querySelector(".threeh");
+
+let fourh = document.querySelector(".fourh");
+
+let fiveh = document.querySelector(".fiveh");
+
+let sixh = document.querySelector(".sixh");
+
+let hexColorValue = document.querySelector(".hex-color-value");
+
+let copyHex = document.querySelector("#copy-hex");
+
+let outputHex = document.querySelector(".output-hex");
+
+sixh.textContent = "hei";
+
+setInterval(()=>{
+
+function giveHex(value,content){
+  
+   
+if (value.value == 0) {
+  content.textContent = 0;
+}
+
+else if (value.value == 1) {
+  content.textContent = 1;
+}
+
+else if (value.value == 2) {
+  content.textContent = 2;
+}
+
+else if (value.value == 3) {
+  content.textContent = 3;
+}
+
+else if (value.value == 4) {
+  content.textContent = 4;
+}
+
+else if (value.value == 5) {
+  content.textContent = 5;
+}
+
+else if (value.value == 6) {
+  content.textContent = 6;
+}
+
+else if (value.value == 7) {
+  content.textContent = 7;
+}
+
+else if (value.value == 8) {
+  content.textContent = 8;
+}
+
+else if (value.value == 9) {
+  content.textContent = 9;
+}
+
+else if (value.value == 10) {
+  content.textContent = "A";
+}
+
+else if (value.value == 11) {
+  content.textContent = "B";
+}
+
+else if (value.value == 12) {
+  content.textContent = "C";
+}
+
+else if (value.value == 13) {
+  content.textContent = "D";
+}
+
+else if (value.value == 14) {
+  content.textContent = "E";
+}
+
+else if (value.value == 15) {
+  content.textContent = "F";
+}
+  
+}
+
+giveHex(hexOne,oneh);
+giveHex(hexTwo,twoh);
+giveHex(hexThree,threeh);
+giveHex(hexFour,fourh);
+giveHex(hexFive,fiveh);
+giveHex(hexSix,sixh);
+
+outputHex.style.backgroundColor=`#${oneh.textContent}${twoh.textContent}${threeh.textContent}${fourh.textContent}${fiveh.textContent}${sixh.textContent}`;
+
+hexColorValue.textContent=`#${oneh.textContent}${twoh.textContent}${threeh.textContent}${fourh.textContent}${fiveh.textContent}${sixh.textContent}`;
+
+copyHex.addEventListener("click", () => {
+
+  navigator.clipboard.writeText("#"+oneh.textContent+twoh.textContent+threeh.textContent+fourh.textContent+fiveh.textContent+sixh.textContent);
+
+  title.textContent = "copied successfuly";
+
+  content.textContent = 'You successfuly copied: #'+oneh.textContent+twoh.textContent+threeh.textContent+fourh.textContent+fiveh.textContent+sixh.textContent;
+
+  universalOn(3500);
+
+});
+
+},0);

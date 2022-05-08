@@ -127,6 +127,8 @@ Well, not very intruiging. To avoid having to navigate to other pages, this webs
 
 <ul type="none">
 
+<li class="flex-start-row"><img class="svg" src="help_black_24dp.svg" alt="" /><h6>To make a modal or pop-up disappear, you must click on it.</h6></li><br />
+
 <li class="flex-start-row"><img class="svg" src="help_black_24dp.svg" alt="" /><h6>Only one dashboad content can be opened at a time.</h6></li><br />
 
 <li class="flex-start-row"><img class="svg" src="help_black_24dp.svg" alt="" /><h6>Clicking on any dashboad manifests its full content. Clicking on it again closes all the detailed content and displays a dashboad bar only without full content. (this is unique as you do not get navigated to another page, but the content of the clicked dashboad manifests fully or gets extendend. The dashboads written home, about, forms ect are a summary of the content held within).</h6></li><br />
@@ -183,9 +185,7 @@ Well, not very intruiging. To avoid having to navigate to other pages, this webs
 <br /><br />
 
 <p>I also believe that  <span class="roboto-condensed-blue"><big>the best way to learn how to code is by doing lot of practise</big></span>, play along with the editor and see if you won't learn anything. Take that from me a self-taught developer.
-</p><br /><br />
-
-<a href="#"><button class="btn"><h5 class="roboto-condensed-blue">JUMP TO THE TOP</h5></button></a>
+</p><br />
 
 </article>
         
@@ -212,6 +212,19 @@ Well, not very intruiging. To avoid having to navigate to other pages, this webs
                 <img class="mage" src="icons8-gmail.svg" alt="IMAGE ERROR" /></a>
         
 
+</article>
+
+
+<br><br>
+
+<!--Template reviews-->
+<article class="template flex-column">
+  
+<h3 class="lobster">I'm proudly South African</h3><br>
+
+<img class="size" src="/south-africa.svg" alt="" /><br>
+
+<a href="#"><button class="btn"><h5 class="roboto-condensed-blue">JUMP TO THE TOP</h5></button></a>
 </article>
 
 <br><br>
@@ -1269,13 +1282,11 @@ Click the social icon you prefer to use as a reach-out. </h6><br>
 <!--  CLONES PAGE END -->
 
 <!--  PROJECTS PAGE -->
-<a class="nav-item projects flex-start-row" href="#">
-
-<main class="flex-start">
+<a class="nav-item projects flex-start" href="#">
 
 <img class="svg" src="inventory_2_black_24dp.svg" alt="" />
 
-<h6 class="h-nav">projects</h6></main>
+<h6 class="h-nav">projects</h6>
 
 <img class="projects-open" src="add_circle_black_24dp.svg" alt="a" />
 
@@ -1287,7 +1298,7 @@ Click the social icon you prefer to use as a reach-out. </h6><br>
 <article class="template flex-column">
    
 <br>
-<h3 class="roboto-condensed-blue">RGB Generator:</h3><br>
+<h3 class="lobster">RGB Generator:</h3><br>
 
 <h6 class="none">Hi, my name is colorRange, or you can just call me Rangee. With your help today, we'll generate rgb colors. To accomplish that, I ask you to swipe the ranges below to generate an rgb color. The generated color will be the background of last small box underneath the blue ranges.
 </h6><br>
@@ -1431,7 +1442,7 @@ placeholder="Type your item..." />
   
 <img class="svg" src="/warning_black_24dp.svg" alt="" />  
   
-<h6 class="sans blue">Should you aim to delete an item, type its number and press delete!</h6>
+<h5 class="sans blue">Should you aim to delete an item, type its number and press delete!</h5>
 
 </div>
 
@@ -1441,17 +1452,59 @@ placeholder="Type your item..." />
 
 <br><br /><br>
 
+<!--hexidecimal generator-->
+<article class="template flex-column"><br>
+
+<h3 class="lobster">Hexidecimal Generator:</h3><br>
+
+<aside class="flex-row">
+<h6 class="roboto-condensed-blue oneh"></h6>&nbsp;&nbsp;
+<input type="range" name="hex-1" id="hex-1" min="0" max="15" class="ranged"><br>
+</aside>
+
+<aside class="flex-row">
+<h6 class="roboto-condensed-blue twoh"></h6>&nbsp;&nbsp;
+<input type="range" name="hex-2" id="hex-2" min="0" max="15" value="225" class="ranged"><br>
+</aside>
+
+<aside class="flex-row">
+<h6 class="roboto-condensed-blue threeh"></h6>&nbsp;&nbsp;
+<input type="range" name="hex-3" id="hex-3" min="0" max="15" value="0" class="ranged">
+</aside>
+  
+<aside class="flex-row">
+<h6 class="roboto-condensed-blue fourh"></h6>&nbsp;&nbsp;
+<input type="range" name="hex-4" id="hex-4" min="0" max="15" value="0" class="ranged">
+</aside>
+
+<aside class="flex-row">
+<h6 class="roboto-condensed-blue fiveh"></h6>&nbsp;&nbsp;
+<input type="range" name="hex-5" id="hex-5" min="0" max="15" value="0" class="ranged">
+</aside>
+  
+<aside class="flex-row">
+<h6 class="roboto-condensed-blue sixh"></h6>&nbsp;&nbsp;
+<input type="range" name="hex-6" id="hex-6" min="0" max="15" value="0" class="ranged">
+</aside><br>
+
+<h6 class="roboto-condensed-blue flex-row">The color value is: <span class="hex-color-value"></span>&nbsp;&nbsp; <img class="svg" id="copy-hex" src="/copy.svg" alt="" />
+</h6><br />
+
+<div class="output-hex"></div>
+
+</article>
+<!--hexidecimal generator end-->
+<br><br><br>
+
 </section>
 <!--  PROJECTS PAGE END -->
 
 <!--  Associates PAGE -->
-<a class="nav-item associates flex-start-row" href="#">
-
-<main class="flex-start">
+<a class="nav-item associates flex-start" href="#">
 
 <img class="svg" src="thumb_up_off_alt_black_24dp.svg" alt="" />
 
-<h6 class="h-nav">Associates</h6></main>
+<h6 class="h-nav">Associates</h6>
 
 <img class="associates-open" src="add_circle_black_24dp.svg" alt="a" />
         
@@ -1578,34 +1631,27 @@ placeholder="Type your item..." />
 
 <aside class="flex-row">
 
-<h4 class="roboto-condensed-blue">TERMS OF USE</h4>
-<br>
+<h4 class="roboto-condensed-blue">TERMS OF USE</h4><br>
+
 </aside>
-
-
-
-<h6 class="flex-row sans">
   
-<img class="svg" src="/thumb_up_off_alt_black_24dp.svg" alt="" />
-
+<h6 class="flex-row roboto">
+  
 &nbsp;You ackeknowledged that the images used in this page belong to the sources availed at the home.</h6>
 
-<h6 class="flex-row sans">
-  
-<img class="svg" src="/thumb_up_off_alt_black_24dp.svg" alt="" />
+<h6 class="flex-row roboto">
 
 &nbsp;You ackeknowledged that this is a personal website, therefore the source code is classified.</h6>
 
-<h6 class="flex-row sans">
-
-<img class="svg" src="/thumb_up_off_alt_black_24dp.svg" alt="" />
+<h6 class="flex-row roboto">
 
 &nbsp;You agreed to not going to use the contact infomation provided to spam or impose any cyber threat.</h6>
+
 </main></footer>
 
 </section>
 
-    
+
 <!-- POPUP-BOX -->
 <section class="pop flex-column none">
 
@@ -1639,7 +1685,7 @@ font&nbsp;awesome & google&nbsp;fonts
 
 <img class="iconic" src="new_releases_black_24dp.svg" alt="IMG ERROR" /><br />
 
-<h6 class="ubuntu">This is version one point six of the website. <span class="roboto-condensed-blue"><big>version 1.9 of 05 May 2022 abbreviated as v1.905052022</big></span>, named after the day its modification began. A neumorphic effect with customisable text size, border and theme color. <!--<br /><br /> Download the older versions 1.1-1.4 zip below:--></h6><br />
+<h6 class="ubuntu">This is version one point nine of the website. <span class="roboto-condensed-blue"><big>version 1.9 of 05 May 2022 abbreviated as v1.905052022</big></span>, named after the day its modification began. A neumorphic effect with customisable text size, border and theme color. <!--<br /><br /> Download the older versions 1.1-1.4 zip below:--></h6><br />
 
 </div>
 
@@ -1650,51 +1696,53 @@ font&nbsp;awesome & google&nbsp;fonts
   
 <h3 class="roboto-condensed-blue">DUMISA</h3><br>
 
-<img class="size round" src="/1a906fdd-3c65-4fbf-b43e-447157ace5fb.jpg" alt="" /><br>
+<img class="size round" src="/1a906fdd-3c65-4fbf-b43e-447157ace5fb.jpg" alt="" /><br />
 
+<aside class="templated flex-row none gap">
 
-<p class="ubuntu"><big><big><big><big><span class="experience crutial"></span></big></big></big></big> years experience of web development.</p><br>
+<img class="svg" src="html-1.svg" alt="" />
+
+<img class="svg" src="css-3.svg" alt="" />
+
+<img class="svg" src="javascript-1.svg" alt="" />
+
+<img class="svg" src="icons8-sass-avatar.svg" alt="" />
+
+</aside>
+
+<p class="roboto-condensed-blue blue"><big><big><big><big><span class="experience"></span></big></big></big></big> years experience of web development.</p>
 
 </article>
 
 <br><br>
 
-<main class="svg-2 flex-row ">
-<article class="rank-html flex-column">
+<main class="svg-2 flex-row  gap">
 
-<h6 class="html flex-row meter">
-
-<img class="svg" src="html-1.svg" alt="" /> 100%&nbsp;
-</h6>
-
-</article><br>
-
-<article class="rank-css flex-column">
-
-<h6 class="css flex-row meter">
-
-<img class="svg" src="css-3.svg" alt="" /> 98%&nbsp;</h6>
-
-</article><br>
-
-<article class="rank-js flex-column">
-  
-<h6 class="js flex-row meter">
-  
-<img class="svg" src="javascript-1.svg" alt="" /> 79%&nbsp;</h6>
-
-</article><br>
-
-<article class="rank-sass flex-column">
-  
-<h6 class="sass flex-row meter">
-  
-<img class="svg" src="icons8-sass-avatar.svg" alt="" /> 69%&nbsp;</h6>
-
-</article><br>
+<!--  Whatsapp -->
+<a href="https://wa.me/+27846708964?text=Hi%2C%20Dumisa%20Regards%20Freelancing" class="flex-column">
+<img class="svg" src="whatsapp-square-brands.svg" alt="IMAGE ERROR" /></a>
 
 
-<br /><br />
+<!--  Gmail -->
+<a class=" flex-row" href="mailto:dumisateam@gmail.com?subject=Interested%20In%20Your%20Freelancing">
+<img class="svg" src="envelope-solid.svg" alt="IMAGE ERROR" /></a>
+        
+        
+<!--Sololearn-->
+<a class="flex-column" href="https://www.sololearn.com/Profile/18680974/?ref=app">
+  <img class="svg" src="icons8-microsoft-edge.svg" alt="" />
+  </a>
+
+
+<!-- Guthub -->
+<a class="" href="https://github.com/DumDevSA">
+<img class="svg" src="git-alt-brands.svg" alt="IMAGE ERROR" /></a>
+
+
+<!-- linkIn -->
+<a class="" href="https://www.linkedin.com/in/minenhle-dumisa-341a95235">
+<img class="svg" src="linkedin-in-brands.svg" alt="IMAGE ERROR" /></a>
+      
 
 </main></div>
     

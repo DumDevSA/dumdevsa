@@ -1,2 +1,2 @@
-# DUMISA
-This is version one point six of the website. version 1.6 of 01 Apr 2022 abbreviated as v1.601042022 & named after the day its modification began.
+# v1.905052022 - Dumisa
+This is version one point nine of the website. version 1.9 of 05 May 2022 abbreviated as v1.905052022, named after the day its modification began. A neumorphic effect with customisable text size, border and theme color.

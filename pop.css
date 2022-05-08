@@ -51,7 +51,7 @@
     --white: #fefefe;
     --whitesmoke: #F7F7F7;
     --smoke: #eee;
-    --theme: #eeeeee;
+    --theme: #eee;
     --tomato: #FF3300;
     --orchid: #0084FF;
     --this: #0084FF;
@@ -1071,7 +1071,7 @@ summary{
   user-select: text;
 }
 
-.output-color{
+.output-color,.output-hex{
     background: var(--theme);
   width: 80vw;
   height: 40px;
