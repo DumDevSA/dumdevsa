@@ -1,192 +1,263 @@
-let root = document.querySelector(":root");
+let root = $(":root");
 
-let welcome = document.querySelector(".welcome");
+let welcome = $(".welcome");
 
-let modal = document.querySelector(".pop");
+let modal = $(".pop");
 
-let intro = document.querySelector(".intro");
+let intro = $(".intro");
 
-let archieve = document.querySelector(".archieve");
+let archieve = $(".archieve");
 
-let archieved = document.querySelector(".archieved");
+let archieved = $(".archieved");
 
-let modalBtn = document.querySelector(".pop-btn");
+let modalBtn = $(".pop-btn");
 
-let popUse = document.querySelector(".pop-use");
+let popUse = $(".pop-use");
 
-let homeSection = document.querySelector("#home");
+let homeSection = $("#home");
 
-let bioSection = document.querySelector("#about");
+let bioSection = $("#about");
 
-let associatesSection = document.querySelector("#associates");
+let associatesSection = $("#associates");
 
-let clonesSection = document.querySelector("#clones");
+let clonesSection = $("#clones");
 
-let projectsSection = document.querySelector("#projects");
+let projectsSection = $("#projects");
 
-let regDate = document.querySelector(".reg-date");
+let regDate = $(".reg-date");
 
-let regDated = document.querySelector(".reg-dated");
+let regDated = $(".reg-dated");
 
-let timer = document.querySelector(".timer");
+let timer = $(".timer");
 
-let newDate = document.querySelector(".new-date");
+let newDate = $(".new-date");
 
-let blogSection = document.querySelector("#blog");
+let blogSection = $("#blog");
 
-let formsSection = document.querySelector("#forms");
+let formsSection = $("#forms");
 
-let contactsSection = document.querySelector("#contacts");
+let contactsSection = $("#contacts");
 
-let home = document.querySelector(".home");
+let home = $(".home");
 
-let associates = document.querySelector(".associates");
+let associates = $(".associates");
 
-let about = document.querySelector(".about");
+let about = $(".about");
 
-let blog = document.querySelector(".blog");
+let blog = $(".blog");
 
-let forms = document.querySelector(".forms");
+let forms = $(".forms");
 
-let contacts = document.querySelector(".contacts");
+let contacts = $(".contacts");
 
-let clones = document.querySelector(".clones");
+let clones = $(".clones");
 
-let projects = document.querySelector(".projects");
+let projects = $(".projects");
 
-let myYears = document.querySelector(".aged");
+let myYears = $(".aged");
 
-//let myYear = document.querySelector(".age");
+//let myYear = $(".age");
 
-let index = document.querySelector(".index");
+let index = $(".index");
 
-let htmlDate = document.querySelector(".html-date");
+let htmlDate = $(".html-date");
 
-let cssDate = document.querySelector(".css-date");
+let cssDate = $(".css-date");
 
-let jsDate = document.querySelector(".js-date");
+let jsDate = $(".js-date");
 
-let sassDate = document.querySelector(".sass-date");
+let sassDate = $(".sass-date");
 
 let status = true;
 
-let version = document.querySelector(".version");
+let version = $(".version");
 
-let firstForm = document.querySelector(".formA");
+let firstForm = $(".formA");
 
-let secForm = document.querySelector(".formB");
+let secForm = $(".formB");
 
-let openFormA = document.querySelector("#openFormA");
+let openFormA = $("#openFormA");
 
-let openFormB = document.querySelector("#openFormB");
+let openFormB = $("#openFormB");
 
-let rose = document.querySelector("#rose");
+let rose = $("#rose");
 
-let risen = document.querySelector("#risen");
+let risen = $("#risen");
 
-let versionOne = document.querySelector(".v1-date");
+let versionOne = $(".v1-date");
 
-let moreGoals = document.querySelector(".moreGoals");
+let moreGoals = $(".moreGoals");
 
-let imageSources = document.querySelector(".imaged-source");
+let imageSources = $(".imaged-source");
 
-let imagesClick = document.querySelector(".image-sources");
+let imagesClick = $(".image-sources");
 
-let policies = document.querySelector(".policies");
+let policies = $(".policies");
 
 let statusPrime = true;
 
-let terming = document.querySelector(".terming");
+let terming = $(".terming");
 
-let imagedHeading = document.querySelector(".imaged-heading");
+let imagedHeading = $(".imaged-heading");
 
-let imagedHeadingTwo = document.querySelector(".imaged-heading-2");
+let imagedHeadingTwo = $(".imaged-heading-2");
 
-let imagedFirst = document.querySelector(".imaged-first");
+let imagedFirst = $(".imaged-first");
 
-let imagedSecond = document.querySelector(".imaged-second");
+let imagedSecond = $(".imaged-second");
 
-let navDumisa = document.querySelector(".nav-dumisa");
+let navDumisa = $(".nav-dumisa");
 
-let contentThree = document.querySelector(".content-three");
+let contentThree = $(".content-three");
 
-let contentThreePrime = document.querySelector(".content-three-3");
+let contentThreePrime = $(".content-three-3");
 
-let versionInfo = document.querySelector(".version-info");
+let versionInfo = $(".version-info");
 
-let iqbaal = document.querySelector(".iqbaal");
+let iqbaal = $(".iqbaal");
 
-let oneOne = document.querySelector(".version-one-one");
+let oneOne = $(".version-one-one");
 
-let dumisa = document.querySelector(".sakhile-dumisa");
+let dumisa = $(".sakhile-dumisa");
 
-let overlayed = document.querySelector(".overlayed");
+let overlayed = $(".overlayed");
 
-let dumPop = document.querySelector(".dum-pop");
+let dumPop = $(".dum-pop");
 
-let formOne = document.querySelector("#formA");
+let formOne = $("#formA");
 
-let logo = document.querySelector(".logo");
+let logo = $(".logo");
 
-let experience = document.querySelector(".experience");
+let experience = $(".experience");
 
-let fromName = document.querySelector(".from-name");
+let fromName = $(".from-name");
 
-let fromEmail = document.querySelector(".from-email");
+let fromEmail = $(".from-email");
 
-let fromNo = document.querySelector(".from-no");
+let fromNo = $(".from-no");
 
-let fromPwd = document.querySelector(".from-pwd");
+let fromPwd = $(".from-pwd");
 
-let blogTwo = document.querySelector(".blog-two");
+let blogTwo = $(".blog-two");
 
-let sbtB = document.querySelector(".sbtB");
+let sbtB = $(".sbtB");
 
-let titleA = document.querySelector("#titleA");
+let titleA = $("#titleA");
 
-let titleB = document.querySelector("#titleB");
+let titleB = $("#titleB");
 
-let comeOne = document.querySelector(".come-1");
+let comeOne = $(".come-1");
 
-let comeTwo = document.querySelector(".come-2");
+let comeTwo = $(".come-2");
 
-let homeOpen = document.querySelector(".home-open");
+let homeOpen = $(".home-open");
 
-let aboutOpen = document.querySelector(".about-open");
+let aboutOpen = $(".about-open");
 
-let blogOpen = document.querySelector(".blog-open");
+let blogOpen = $(".blog-open");
 
-let formsOpen = document.querySelector(".forms-open");
+let formsOpen = $(".forms-open");
 
-let contactsOpen = document.querySelector(".contacts-open");
+let contactsOpen = $(".contacts-open");
 
-let clonesOpen = document.querySelector(".clones-open");
+let clonesOpen = $(".clones-open");
 
-let projectsOpen = document.querySelector(".projects-open");
+let projectsOpen = $(".projects-open");
 
-let associatesOpen = document.querySelector(".associates-open");
+let associatesOpen = $(".associates-open");
 
 let summaryStatus = true;
 
-let summaryA = document.querySelector("#summary-a");
+let summaryA = $("#summary-a");
 
-let summaryB = document.querySelector("#summary-b");
+let summaryB = $("#summary-b");
 
-let summaryC = document.querySelector("#summary-c");
+let summaryC = $("#summary-c");
 
-let summaryD = document.querySelector("#summary-d");
+let summaryD = $("#summary-d");
 
-let indOne = document.querySelector(".indicator-1");
+let indOne = $(".indicator-1");
 
-let indTwo = document.querySelector(".indicator-2");
+let indTwo = $(".indicator-2");
 
-let indThree = document.querySelector(".indicator-3");
+let indThree = $(".indicator-3");
 
-let indFour = document.querySelector(".indicator-4");
+let indFour = $(".indicator-4");
 
-let cloneMore = document.querySelector(".clone-more");
+let cloneMore = $(".clone-more");
 
-let associatesMore = document.querySelector(".associates-more");
+let associatesMore = $(".associates-more");
+
+let universal = $("#universal");
+
+let title = $(".uni-title");
+
+let content = $(".uni-content");
+
+let copy = $("#copy");
+let statusColor = true;
+let statusFont = true;
+let statusBorder = false;
+
+let namesError = $(".name-error");
+
+let noError = $(".no-error");
+
+let emailError = $(".email-error");
+
+let pwdError = $(".pwd-error");
+
+let pwdConfirmError = $(".confirm-error");
+
+let fieldOne = $(".field-1");
+let fieldTwo = $(".field-2");
+let fieldThree = $(".field-3");
+let fieldFour = $(".field-4");
+let fieldFive = $(".field-5");
+
+// Regex
+let emailReg = /^([A-Z|a-z|0-9|\.|-]+)@([a-z|0-9]{2,20})\.([A-Za-z0-9]{2,10}$)/;
+
+let noReg = /^(0[6-9]{1}[0-9]{1})([-\s]{1})?([0-9]{3})([-\s]{1})?([0-9]{4})$/;
+
+let nameReg = /^([A-Za-z]{4,13})\s([A-Za-z]{4,13})$/;
+
+let pwdReg = /(^\S)+([A-Za-z\d^/S*D]){8,}$/i;
+
+let sbtA = $(".sbtA");
+
+let red = "#FF3300";
+
+let green = "#09B83E";
+
+let goodName = $(".good-name");
+let goodEmail = $(".good-email");
+let goodNo = $(".good-no");
+let goodPwd = $(".good-pwd");
+let goodConfirm = $(".good-confirm");
+
+let colorValue = $(".color-value");
+
+let outputColor = $(".output-color");
+
+let rangeOne = $("#range-1");
+
+let rangeTwo = $("#range-2");
+
+let rangeThree = $("#range-3");
+
+let oned = $(".oned");
+
+let twod = $(".twod");
+
+let threed = $(".threed");
+
+let themeColor = $(".theme-color");
+
+let themeBorder = $(".theme-border");
+
+let themeFont = $(".theme-font");
+
 
 function none(element) {
     element.style.display = "none";
@@ -201,10 +272,14 @@ function inline(element) {
     element.style.display = "inline";
 }
 
-let statusA = document.querySelector(".sumcancel-1");
-let statusB = document.querySelector(".sumcancel-2");
-let statusC = document.querySelector(".sumcancel-3");
-let statusD = document.querySelector(".sumcancel-4");
+function $(element){
+  return document.querySelector(element);
+}
+
+let statusA = $(".sumcancel-1");
+let statusB = $(".sumcancel-2");
+let statusC = $(".sumcancel-3");
+let statusD = $(".sumcancel-4");
 
 // summary icon status alter
 function summaryIndicator(a,b){
@@ -348,6 +423,222 @@ let dOb = new Date("21 feb 2003");
 
 let date = new Date();
 
+// period detector
+
+let umzuzu = $(".umzuzu");
+let isikhathi = $(".isikhathi");
+let usuku = $(".usuku");
+
+let theHour;
+let period;
+let theZone;
+let theMonth;
+let theWeekday;
+let alarmSet = $(".alarm-set");
+let timehh = $("#time-hh");
+let timemm = $("#time-mm");
+
+//verifyValue(timemm);
+
+let comparedDate = new Date;
+
+function verifyValue(hh,mm){
+  
+if(isNaN(parseInt(hh.value))){
+hh.value="";
+} 
+if(isNaN(parseInt(mm.value))){
+mm.value="";
+  }
+if(hh.value >23){
+hh.value="";
+  }
+if(mm.value > 60){
+mm.value="";
+}
+if (hh.value.includes("-") ) {
+hh.value=""
+}
+if (mm.value.includes("-")) {
+mm.value="";
+}
+}
+
+verifyValue(timehh,timemm);
+
+
+
+let alarmId;
+
+alarmSet.addEventListener("click" , ()=>{
+  
+alarmId = setInterval(()=>{
+  
+comparedDate.setHours(timehh.value);
+
+comparedDate.setMinutes(timemm.value);
+
+
+if (comparedDate.getTime() === date.getTime()) {
+    
+title.textContent="It's time!";
+  
+content.textContent=`Your time is precisly ${comparedDate.getHours()}:${comparedDate.getMinutes()} as you have set your alarm.`;
+  
+universalOn(7000);
+
+}
+
+},0)
+  
+})
+
+let morning =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];
+
+let day = [12,13,14];
+
+let afternoon = [15,16,17,18];
+
+let night = [19,20,21,22,23];
+
+if(morning.some((a)=> a === date.getHours())){
+  period = "Morning";
+  theZone = "AM";
+}
+
+else if(day.some((a)=> a === date.getHours())){
+  period ="Day";
+  theZone = "PM";
+  
+}
+
+else if(afternoon.some((a)=> a === date.getHours())){
+  period ="Afternoon";
+  theZone = "PM";
+  
+}
+
+else if(night.some((a)=> a === date.getHours())){
+  period ="Night";
+  theZone = "PM";
+  
+}
+// period detector end
+
+// month detector
+
+if (date.getMonth() === 0) {
+ 
+ theMonth = "January";
+  
+}
+else if (date.getMonth() === 1) {
+ 
+ theMonth = "February";
+  
+}
+else if (date.getMonth() === 2) {
+ 
+ theMonth = "March";
+  
+}
+else if (date.getMonth() === 3) {
+ 
+ theMonth = "April";
+ 
+}
+else if (date.getMonth() === 4) {
+ 
+ theMonth = "May";
+ 
+}
+else if (date.getMonth() === 5) {
+ 
+ theMonth = "June";
+ 
+}
+else if (date.getMonth() === 6) {
+ 
+ theMonth = "July";
+ 
+}
+else if (date.getMonth() === 7) {
+ 
+ theMonth = "August";
+ 
+}
+else if (date.getMonth() === 8) {
+ 
+ theMonth = "September";
+  
+}
+else if (date.getMonth() === 9) {
+ 
+ theMonth = "October";
+  
+}
+else if (date.getMonth() === 10) {
+ 
+ theMonth = "November";
+ 
+}
+else if (date.getMonth() === 11) {
+ 
+ theMonth = "December";
+ 
+}
+// month detector end
+
+// weekday detector
+if (date.getDay() === 1) {
+
+  theWeekday = "Monday";
+
+}
+else if (date.getDay() === 2) {
+
+  theWeekday = "Tuesday";
+
+}
+else if (date.getDay() === 3) {
+
+  theWeekday = "Wednesday";
+
+}
+else if (date.getDay() === 4) {
+
+  theWeekday = "Thursday";
+
+}
+else if (date.getDay() === 5) {
+
+  theWeekday = "Friday";
+
+}
+else if (date.getDay() === 6) {
+
+  theWeekday = "Sabbath";
+
+}
+else if (date.getDay() === 7) {
+
+  theWeekday = "Sunday";
+  
+}
+// weekday detector end
+
+isikhathi.textContent = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${theZone}`;
+
+umzuzu.textContent = `${period}`;
+
+usuku.textContent =` ${date.getDate()} ${theMonth} ${date.getFullYear()}, ${theWeekday}`;
+
+
+let okuphelele = $(".okuphelele");
+
+okuphelele.textContent= `${period}, today's time is ${date.getHours()}:${date.getMinutes()} ${theZone}  and the date is ${date.getDate()} ${theMonth} ${date.getFullYear()}, ${theWeekday}`;
+
+
 let myAgeCal = date.getFullYear() - dOb.getFullYear();
 
 let myAgeCalTwo = `${myAgeCal} Years old`;
@@ -394,7 +685,131 @@ jsDate.textContent = jsDating.toDateString();
 
 sassDate.textContent = sassDating.toDateString();
 
+let names = document.myForm.names.value.trim();
+
+let numbered = document.myForm.number.value;
+
+let email = document.myForm.email.value.trim();
+
+let pwd = document.myForm.pwd.value;
+
+let pwdConfirm = document.myForm.pwdConfirm.value.trim();
+
+if (!nameReg.test(names)) {
+
+  namesError.classList.remove("none");
+  fieldOne.style.borderColor = red;
+  sbtA.style.backgroundColor = red;
+  goodName.classList.add("none");
+  titleA.style.backgroundColor = red;
+  return false;
+  names.focus();
+
+} else if (!emailReg.test(email)) {
+
+  namesError.classList.add("none");
+  fieldOne.style.borderColor = green;
+  goodName.classList.remove("none");
+
+
+  goodEmail.classList.add("none");
+  emailError.classList.remove("none");
+  fieldTwo.style.borderColor = red;
+  sbtA.style.backgroundColor = red;
+  titleA.style.backgroundColor = red;
+  return false;
+  email.focus()
+
+} else if (!noReg.test(numbered)) {
+  namesError.classList.add("none");
+  fieldOne.style.borderColor = green;
+  goodName.classList.remove("none");
+  emailError.classList.add("none");
+  fieldTwo.style.borderColor = green;
+  goodEmail.classList.remove("none");
+
+
+  goodNo.classList.add("none");
+  noError.classList.remove("none");
+  fieldThree.style.borderColor = red;
+  sbtA.style.backgroundColor = red;
+  titleA.style.backgroundColor = red;
+  return false;
+  numbered.focus();
+
+
+} else if (!pwdReg.test(pwd)) {
+
+  noError.classList.add("none");
+  fieldThree.style.borderColor = green;
+  goodNo.classList.remove("none");
+  namesError.classList.add("none");
+  fieldOne.style.borderColor = green;
+  goodName.classList.remove("none");
+  emailError.classList.add("none");
+  fieldTwo.style.borderColor = green;
+  goodEmail.classList.remove("none");
+
+
+  goodPwd.classList.add("none");
+  pwdError.classList.remove("none");
+  fieldFour.style.borderColor = red;
+  sbtA.style.backgroundColor = red;
+  titleA.style.backgroundColor = red;
+  return false;
+  pwd.focus();
+
+} else if (pwdConfirm !== pwd) {
+  noError.classList.add("none");
+  fieldThree.style.borderColor = green;
+  goodNo.classList.remove("none");
+  namesError.classList.add("none");
+  fieldOne.style.borderColor = green;
+  goodName.classList.remove("none");
+  emailError.classList.add("none");
+  fieldTwo.style.borderColor = green;
+  goodEmail.classList.remove("none");
+  pwdError.classList.add("none");
+  fieldFour.style.borderColor = green;
+  goodPwd.classList.remove("none");
+
+
+  goodConfirm.classList.add("none");
+  pwdConfirmError.classList.remove("none");
+  fieldFive.style.borderColor = red;
+  sbtA.style.backgroundColor = red;
+  titleA.style.backgroundColor = red;
+  
+  sbtA.style.backgroundColor = "#0091EA";
+  titleA.style.backgroundColor = "#0091EA";
+  return false;
+  pwdConfirm.focus();
+
+}else{
+  
+goodName.classList.remove("none");
+goodEmail.classList.remove("none");
+goodNo.classList.remove("none");
+goodPwd.classList.remove("none");
+goodConfirm.classList.remove("none");
+
+
+namesError.classList.add("none");
+emailError.classList.add("none");
+noError.classList.add("none");
+pwdError.classList.add("none");
+pwdConfirmError.classList.add("none");
+
+
+fieldOne.style.borderColor = green;
+fieldTwo.style.borderColor = green;
+fieldThree.style.borderColor = green;
+fieldFour.style.borderColor =  green;
+fieldFive.style.borderColor = green;
+}
 },0);
+
+
 //ALL TIME & DATE FORMATS END
 
 version.textContent = "v1.905052022";
@@ -485,44 +900,6 @@ versionInfo.addEventListener("click", () => {
     none(modal);
     index.style.touchAction = " auto";
 });
-
-let namesError = document.querySelector(".name-error");
-
-let noError = document.querySelector(".no-error");
-
-let emailError = document.querySelector(".email-error");
-
-let pwdError = document.querySelector(".pwd-error");
-
-let pwdConfirmError = document.querySelector(".confirm-error");
-
-let fieldOne = document.querySelector(".field-1");
-let fieldTwo = document.querySelector(".field-2");
-let fieldThree = document.querySelector(".field-3");
-let fieldFour = document.querySelector(".field-4");
-let fieldFive = document.querySelector(".field-5");
-
-
-// Regex
-let emailReg = /^([A-Z|a-z|0-9|\.|-]+)@([a-z|0-9]{2,20})\.([A-Za-z0-9]{2,10}$)/;
-
-let noReg = /^(0[6-9]{1}[0-9]{1})([-\s]{1})?([0-9]{3})([-\s]{1})?([0-9]{4})$/;
-
-let nameReg = /^([A-Za-z]{4,13})\s([A-Za-z]{4,13})$/;
-
-let pwdReg = /(^\S)+([A-Za-z\d^/S*D]){8,}$/i;
-
-let sbtA = document.querySelector(".sbtA");
-
-let red = "#FF3300";
-
-let green = "#09B83E";
-
-let goodName = document.querySelector(".good-name");
-let goodEmail = document.querySelector(".good-email");
-let goodNo = document.querySelector(".good-no");
-let goodPwd = document.querySelector(".good-pwd");
-let goodConfirm = document.querySelector(".good-confirm");
 
 function validate() {
 
@@ -685,13 +1062,13 @@ function login() {
 
     let email = document.secondForm.email.value.trim();
 
-    let fromEmailed = document.querySelector(".from-emailed");
+    let fromEmailed = $(".from-emailed");
 
     let pwd = document.secondForm.pwd.value.trim();
 
-    let emailField = document.querySelector(".email-field");
+    let emailField = $(".email-field");
 
-    let pwdField = document.querySelector(".pwd-field");
+    let pwdField = $(".pwd-field");
 
     if (!emailReg.test(email)) {
 
@@ -748,22 +1125,6 @@ rose.addEventListener("click", () => {
 
 // rgb generator
 
-let colorValue = document.querySelector(".color-value");
-
-let outputColor = document.querySelector(".output-color");
-
-let rangeOne = document.querySelector("#range-1");
-
-let rangeTwo = document.querySelector("#range-2");
-
-let rangeThree = document.querySelector("#range-3");
-
-let oned = document.querySelector(".oned");
-
-let twod = document.querySelector(".twod");
-
-let threed = document.querySelector(".threed");
-
 setInterval(() =>{
   
 oned.textContent = rangeOne.value;
@@ -780,17 +1141,6 @@ outputColor.style.backgroundColor=`rgb(${rangeOne.value},${rangeTwo.value},${ran
 colorValue.textContent = `rgb(${rangeOne.value},${rangeTwo.value},${rangeThree.value})`;
 
 }
-
-let statusColor = true;
-let statusFont = true;
-let statusBorder = false;
-
-
-let themeColor = document.querySelector(".theme-color");
-
-let themeBorder = document.querySelector(".theme-border");
-
-let themeFont = document.querySelector(".theme-font");
 
 themeColor.addEventListener("click" , () =>{
   
@@ -889,7 +1239,6 @@ universalOn(3500);
   }
 });
 
-let copy = document.querySelector("#copy");
 
 copy.addEventListener("click" ,() =>{
   
@@ -911,11 +1260,6 @@ copy.addEventListener("click" ,() =>{
 
 
 // universal modal
-let universal = document.querySelector("#universal");
-
-let title = document.querySelector(".uni-title");
-
-let content = document.querySelector(".uni-content");
 
 function universalOn(duration){
 flex(universal);
@@ -931,14 +1275,13 @@ none(universal);
 
 //Random Quote Generator
 
-let quoteTitle = document.querySelector(".quote-title");
+let quoteTitle = $(".quote-title");
 
-let quoteCounter = document.querySelector(".quote-counter");
+let quoteCounter = $(".quote-counter");
 
-let quoteContent = document.querySelector(".quote-content");
+let quoteContent = $(".quote-content");
 
-
-let quoteBtn = document.querySelector(".quote-btn");
+let quoteBtn = $(".quote-btn");
 
 quoteBtn.addEventListener("click" , loadQuote);
 
@@ -995,7 +1338,7 @@ themeBorder.addEventListener("click" , () => themeBorder.classList.toggle("toggl
 
 let policyStatus = true;
 
-let acceptPolicy = document.querySelector("#accept-policy");
+let acceptPolicy = $("#accept-policy");
 
 acceptPolicy.addEventListener("change" , function policyAcceptence(){
   
@@ -1025,15 +1368,15 @@ break
 
 // stop watch
 
-let start = document.querySelector("#start");
+let start = $("#start");
 
-let pause = document.querySelector("#pause");
+let pause = $("#pause");
 
-let clear = document.querySelector("#clear");
+let clear = $("#clear");
 
-let decreament = document.querySelector("#decreament");
+let decreament = $("#decreament");
 
-let timerOutput = document.querySelector("#timer-output");
+let timerOutput = $("#timer-output");
 
 let timeoutId;
 
@@ -1106,11 +1449,11 @@ decreament.addEventListener("click", () => decreament.classList.toggle("toggled-
 
 // hex start
 
-let hexValue = document.querySelector("#hex-value");
+let hexValue = $("#hex-value");
 
-let hexOutput = document.querySelector("#hex-output");
+let hexOutput = $("#hex-output");
 
-let hexCopy = document.querySelector("#hex-copy");
+let hexCopy = $("#hex-copy");
 
 setInterval(() =>{
   
@@ -1136,13 +1479,13 @@ navigator.clipboard.writeText(`#${hexValue.value}`);
 
 //list
 
-let listAdd = document.querySelector("#add-item");
+let listAdd = $("#add-item");
 
-let listDelete = document.querySelector("#delete-item");
+let listDelete = $("#delete-item");
 
-let listValue = document.querySelector("#list-value");
+let listValue = $("#list-value");
 
-let listItem = document.querySelector("#list-item");
+let listItem = $("#list-item");
 
 
 listDelete.addEventListener("click", () => listDelete.classList.toggle("toggled-quote"));
@@ -1199,13 +1542,13 @@ listValue.value="";
 },0);
 });
 
-let greeting = document.querySelector("#greeting");
+let greeting = $("#greeting");
 
-let dumLogo = document.querySelector(".letter");
+let dumLogo = $(".letter");
 
-let greeted = document.querySelector(".greeted");
+let greeted = $(".greeted");
 
-let greetLanguagr = document.querySelector("#greet-language");
+let greetLanguagr = $("#greet-language");
 
 function loadGreeting(){
   
@@ -1239,36 +1582,36 @@ loadGreeting();
 
 
 // hexideximal generator
-let hexOne = document.querySelector("#hex-1");
+let hexOne = $("#hex-1");
 
-let hexTwo = document.querySelector("#hex-2");
+let hexTwo = $("#hex-2");
 
-let hexThree = document.querySelector("#hex-3");
+let hexThree = $("#hex-3");
 
-let hexFour = document.querySelector("#hex-4");
+let hexFour = $("#hex-4");
 
-let hexFive = document.querySelector("#hex-5");
+let hexFive = $("#hex-5");
 
-let hexSix = document.querySelector("#hex-6");
+let hexSix = $("#hex-6");
 
 
-let oneh = document.querySelector(".oneh");
+let oneh = $(".oneh");
 
-let twoh = document.querySelector(".twoh");
+let twoh = $(".twoh");
 
-let threeh = document.querySelector(".threeh");
+let threeh = $(".threeh");
 
-let fourh = document.querySelector(".fourh");
+let fourh = $(".fourh");
 
-let fiveh = document.querySelector(".fiveh");
+let fiveh = $(".fiveh");
 
-let sixh = document.querySelector(".sixh");
+let sixh = $(".sixh");
 
-let hexColorValue = document.querySelector(".hex-color-value");
+let hexColorValue = $(".hex-color-value");
 
-let copyHex = document.querySelector("#copy-hex");
+let copyHex = $("#copy-hex");
 
-let outputHex = document.querySelector(".output-hex");
+let outputHex = $(".output-hex");
 
 sixh.textContent = "hei";
 
@@ -1367,3 +1710,82 @@ copyHex.addEventListener("click", () => {
 });
 
 },0);
+
+
+let effectOne = $("#effect-1");
+
+let effectTwo = $("#effect-2");
+
+let effectThree = $("#effect-3");
+
+let effectFour = $("#effect-4");
+
+let effectFive = $("#effect-5");
+
+let effectSix = $("#effect-6");
+
+let effectSeven = $("#effect-7");
+
+let effectEight = $("#effect-8");
+
+let effectNine = $("#effect-9");
+
+let effectTen = $("#effect-10");
+
+let effectEleven = $("#effect-11");
+
+let effectTwelve = $("#effect-12");
+
+
+setInterval(()=>{
+let round = Math.random();
+let random = Math.round(round * 100);
+effectOne.value = random;
+effectTwelve.value = random;
+},1000)
+
+setInterval(()=>{
+  let round = Math.random();
+  let random = Math.round(round * 100);
+  effectTwo.value = random;
+  effectSeven.value = random;
+},1000)
+
+setInterval(() => {
+  let round = Math.random();
+  let random = Math.round(round * 100);
+  effectThree.value = random;
+  effectEight.value = random;
+},1000)
+  
+setInterval(() => {
+  let round = Math.random();
+  let random = Math.round(round * 100);
+  effectFour.value = random;
+  effectNine.value = random;
+},1000)
+  
+setInterval(() => {
+  let round = Math.random();
+  let random = Math.round(round * 100);
+  effectFive.value = random;
+  effectTen.value = random;
+},1000)
+  
+setInterval(() => {
+  let round = Math.random();
+  let random = Math.round(round * 100);
+  effectSix.value = random;
+  effectEleven.value = random;
+},1000)
+  
+  
+// practice
+function a(a){
+  return a*2;
+}
+
+console.log(a(2));
+console.log(a(5));
+console.log(a(2))
+
