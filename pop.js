@@ -620,7 +620,7 @@ else if (date.getDay() === 6) {
   theWeekday = "Sabbath";
 
 }
-else if (date.getDay() === 7) {
+else if (date.getDay() === 0) {
 
   theWeekday = "Sunday";
   

@@ -204,7 +204,8 @@ a:hover,a:visited,a:active {
     margin-bottom: 30px;
     border-radius: 4px;
     box-shadow: var(--shadow);
-    border: var(--border);
+    outline: .1px solid var(--blue);
+
 }
 
 .h-nav {
@@ -214,6 +215,7 @@ a:hover,a:visited,a:active {
     font-weight: bolder;
     letter-spacing: 1px;
     text-transform: uppercase;
+    border: .1px solid var(--theme);
 }
 
 .lobster{
@@ -1240,6 +1242,7 @@ margin-left: 30px;
   border-radius: 4px;
   box-shadow: var(--shadow);
 }
+
 
 
 
