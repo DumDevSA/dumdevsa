@@ -1780,12 +1780,3 @@ setInterval(() => {
 },1000)
   
   
-// practice
-function a(a){
-  return a*2;
-}
-
-console.log(a(2));
-console.log(a(5));
-console.log(a(2))
-

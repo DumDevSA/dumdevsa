@@ -1,3 +1,17 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap";
+
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -385,7 +399,7 @@ margin-left: 30px;
     width: 100vw;
     background: var(--theme);
     min-height: 5px;
-    max-height: 280px;
+    max-height: 180px;
     border: none;
     box-shadow:  -20px 20px 60px #bebebe,
              20px -20px 60px #ffffff;
@@ -417,8 +431,7 @@ margin-left: 30px;
 }
 
 .fromArchieve {
-    padding: 4%;
-    width: 94vw;
+   width: 94vw;
     min-height: 167px;
     max-height: 46000070px;
     box-shadow: var(--shadow);
